@@ -28,8 +28,9 @@
     <div class="post-content">
       {{ .Content }}
     </div>
+    <script id="dsq-count-scr" src="//danielddemissieblog.disqus.com/count.js" async></script>
     <div class="post-footer">
-      {{ template "_internal/disqus.html" . }}
+      {{ partial "disqus.html" . }}
     </div>
   </article>
 {{ end }}
